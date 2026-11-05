@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>What is MCP, in plain English · One Topic a Week</title>
+<meta name="description" content="Model Context Protocol sounds like buzzword soup. It is really just one idea — a standard plug for AI tools — and it clicks once you see it.">
+<link rel="alternate" type="application/rss+xml" title="One Topic a Week" href="../feed.xml">
+<style>
+:root {
+  --ink: #2b3947; --soft: #5f6f7d; --accent: #7b5ea7; --line: #e6e1d8;
+  --paper: #fffdf8; --code: #f4f2ec; --quote-bg: #faf7ff; --ok: #2e7d4f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink); background: var(--paper);
+  font-family: ui-sans-serif, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+}
+main { max-width: 46rem; margin: 0 auto; padding: 1rem 1.25rem 3rem; }
+a { color: var(--accent); }
+header { padding: 2.5rem 1.25rem 0.5rem; text-align: center; }
+header .brand, header .brand a {
+  font-size: 1.35rem; font-weight: 700; color: var(--ink);
+  text-decoration: none; letter-spacing: -0.01em;
+}
+header .tagline { color: var(--soft); margin-top: 0.35rem; font-size: 0.98rem; }
+h1, h2, h3 { line-height: 1.25; letter-spacing: -0.01em; }
+.meta { color: var(--soft); font-size: 0.92rem; }
+blockquote {
+  border-left: 4px solid #ddd0f0; background: var(--quote-bg);
+  margin: 1.3rem 0; padding: 0.5rem 1.1rem; color: var(--soft);
+}
+pre {
+  background: var(--code); padding: 0.9rem 1.1rem; border-radius: 8px;
+  overflow-x: auto; line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+code {
+  background: var(--code); padding: 0.1rem 0.35rem; border-radius: 4px;
+  font-size: 0.92em;
+}
+img { max-width: 100%; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+.issues { list-style: none; padding-left: 0; }
+.issues li { margin: 1.1rem 0; padding-left: 0; }
+.issues .summary { color: var(--soft); font-size: 0.95rem; }
+.year { color: var(--soft); border-bottom: 1px solid var(--line); }
+.background { color: var(--soft); font-size: 0.95rem; }
+.back { margin-top: 2.5rem; }
+.scheduled {
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 0.9rem 1.2rem; background: #f6fbf7;
+}
+.scheduled .ok { color: var(--ok); font-weight: 600; }
+.steps li { margin: 0.45rem 0; }
+footer {
+  border-top: 1px solid var(--line); text-align: center;
+  color: var(--soft); font-size: 0.9rem; padding: 1.4rem 1rem 2rem; line-height: 1.5;
+}
+footer .fineprint { font-size: 0.82rem; margin-top: 0.4rem; }
+</style>
+</head>
+<body>
+<header>
+<p class="brand"><a href="../index.html">One Topic a Week</a></p>
+<p class="tagline">Plain-English AI, one friendly topic each week.</p>
+</header>
+<main>
+<article>
+<h1>What is MCP, in plain English</h1>
+<p class="meta"><time datetime="2026-11-04">November 4, 2026</time> &middot; #agents, #mcp, #beginners</p>
+<p>Last week we ran a small AI on a laptop. This week we zoom out: how does<br>
+your AI <em>do things</em> — read a file, check a calendar, search the web?<br>
+The answer everyone settled on in 2025 is a plug standard called MCP.</p>
+<h2>The topic in one sentence</h2>
+<p><strong>MCP (Model Context Protocol)</strong> is a shared plug format that lets any AI<br>
+tool talk to any capability — like USB, but for AI.</p>
+<h2>Why it matters to you</h2>
+<ul><li>One AI tool can gain new abilities without being rebuilt.</li><li>One small server program can serve <em>many</em> different AI tools.</li><li>You stop gluing custom integrations together for every combination.</li></ul>
+<h2>Try it yourself (step by step)</h2>
+<ol><li>Read the friendly official explainer once, slowly:</li></ol>
+<p>   <a href="https://modelcontextprotocol.io">modelcontextprotocol.io</a>. It is shorter<br>
+   than you fear.</p>
+<ol><li>Look at a tiny MCP server — for example one that exposes your notes</li></ol>
+<p>   folder. The code is mostly *a list of functions with names and<br>
+   descriptions*.</p>
+<ol><li>Picture your own daily loops. Which two tools would you wire together</li></ol>
+<p>   first?</p>
+<pre><code>AI assistant  &lt;-&gt;  MCP  &lt;-&gt;  your notes
+                            your calendar
+                            your file search</code></pre>
+<blockquote><p>Middle of the road: you do not need to write an MCP server this week.<br>
+Understanding <em>what the plug is for</em> is the skill that pays next month,<br>
+when you pick tools and instantly know which ones cooperate.</p></blockquote>
+<h2>One friendly note</h2>
+<p>When someone says "agent" with a serious face, they usually mean: a model,<br>
+looping, calling tools through things like MCP until the job is done.<br>
+Drama optional.</p>
+<p class="back"><a href="../index.html">&larr; All topics</a></p>
+</article>
+</main>
+<footer>
+<p>Written in public by Dylan Asdale &middot; Published by Asdale Dynamics, LLC &middot; <a href="../feed.xml">RSS feed</a> &middot; <a href="../index.html">Archive</a></p>
+<p class="fineprint">Educational content only — not professional, medical, or legal advice. &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT License</p>
+</footer>
+</body>
+</html>

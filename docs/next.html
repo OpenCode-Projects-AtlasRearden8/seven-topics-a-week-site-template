@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Next week · One Topic a Week</title>
+<meta name="description" content="What is scheduled next on the weekly cadence.">
+<link rel="alternate" type="application/rss+xml" title="One Topic a Week" href="feed.xml">
+<style>
+:root {
+  --ink: #2b3947; --soft: #5f6f7d; --accent: #7b5ea7; --line: #e6e1d8;
+  --paper: #fffdf8; --code: #f4f2ec; --quote-bg: #faf7ff; --ok: #2e7d4f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink); background: var(--paper);
+  font-family: ui-sans-serif, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+}
+main { max-width: 46rem; margin: 0 auto; padding: 1rem 1.25rem 3rem; }
+a { color: var(--accent); }
+header { padding: 2.5rem 1.25rem 0.5rem; text-align: center; }
+header .brand, header .brand a {
+  font-size: 1.35rem; font-weight: 700; color: var(--ink);
+  text-decoration: none; letter-spacing: -0.01em;
+}
+header .tagline { color: var(--soft); margin-top: 0.35rem; font-size: 0.98rem; }
+h1, h2, h3 { line-height: 1.25; letter-spacing: -0.01em; }
+.meta { color: var(--soft); font-size: 0.92rem; }
+blockquote {
+  border-left: 4px solid #ddd0f0; background: var(--quote-bg);
+  margin: 1.3rem 0; padding: 0.5rem 1.1rem; color: var(--soft);
+}
+pre {
+  background: var(--code); padding: 0.9rem 1.1rem; border-radius: 8px;
+  overflow-x: auto; line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+code {
+  background: var(--code); padding: 0.1rem 0.35rem; border-radius: 4px;
+  font-size: 0.92em;
+}
+img { max-width: 100%; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+.issues { list-style: none; padding-left: 0; }
+.issues li { margin: 1.1rem 0; padding-left: 0; }
+.issues .summary { color: var(--soft); font-size: 0.95rem; }
+.year { color: var(--soft); border-bottom: 1px solid var(--line); }
+.background { color: var(--soft); font-size: 0.95rem; }
+.back { margin-top: 2.5rem; }
+.scheduled {
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 0.9rem 1.2rem; background: #f6fbf7;
+}
+.scheduled .ok { color: var(--ok); font-weight: 600; }
+.steps li { margin: 0.45rem 0; }
+footer {
+  border-top: 1px solid var(--line); text-align: center;
+  color: var(--soft); font-size: 0.9rem; padding: 1.4rem 1rem 2rem; line-height: 1.5;
+}
+footer .fineprint { font-size: 0.82rem; margin-top: 0.4rem; }
+</style>
+</head>
+<body>
+<header>
+<p class="brand"><a href="index.html">One Topic a Week</a></p>
+<p class="tagline">Plain-English AI, one friendly topic each week.</p>
+</header>
+<main>
+<article>
+<h1>Next week: November 11, 2026</h1>
+<p class="scheduled"><span class="ok">Scheduled.</span> The next issue goes out
+<time datetime="2026-11-11">November 11, 2026</time>.
+The weekly cadence is simple: one topic, seven days, every week.</p>
+<h2>Write it in public</h2>
+<ol class="steps">
+<li>Create or edit the stub file: <code>posts/2026-11-11-new-topic.md</code>
+(if it is missing, run <code>python3 build.py next</code>).</li>
+<li>Give it a real <code>title:</code> and <code>summary:</code>, then replace
+the TODO with the issue itself.</li>
+<li>Preview at home: <code>python3 build.py build &amp;&amp; python3 build.py serve</code>.</li>
+<li>When the words are ready for readers, remove the
+<code>draft: yes</code> line from the front matter &mdash; that is the
+publish switch.</li>
+<li>Rebuild and commit both folders together:
+<code>python3 build.py build</code>, then commit <code>posts/</code> and
+<code>docs/</code> in one commit.</li>
+</ol>
+<p class="background">While a file is marked <code>draft: yes</code>, it stays
+on your machine: it is not built, not in the archive, and not in the RSS
+feed. Scheduling is public; drafts are private.</p>
+<p class="back"><a href="index.html">&larr; All topics</a></p>
+</article>
+</main>
+<footer>
+<p>Written in public by Dylan Asdale &middot; Published by Asdale Dynamics, LLC &middot; <a href="feed.xml">RSS feed</a> &middot; <a href="index.html">Archive</a></p>
+<p class="fineprint">Educational content only — not professional, medical, or legal advice. &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT License</p>
+</footer>
+</body>
+</html>

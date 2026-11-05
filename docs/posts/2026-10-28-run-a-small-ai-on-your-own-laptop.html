@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Run a small AI on your own laptop · One Topic a Week</title>
+<meta name="description" content="Local AI in plain English — why it is free, private, and easier to start than you would think.">
+<link rel="alternate" type="application/rss+xml" title="One Topic a Week" href="../feed.xml">
+<style>
+:root {
+  --ink: #2b3947; --soft: #5f6f7d; --accent: #7b5ea7; --line: #e6e1d8;
+  --paper: #fffdf8; --code: #f4f2ec; --quote-bg: #faf7ff; --ok: #2e7d4f;
+}
+* { box-sizing: border-box; }
+body {
+  margin: 0; color: var(--ink); background: var(--paper);
+  font-family: ui-sans-serif, system-ui, "Segoe UI", Helvetica, Arial, sans-serif;
+  line-height: 1.7;
+}
+main { max-width: 46rem; margin: 0 auto; padding: 1rem 1.25rem 3rem; }
+a { color: var(--accent); }
+header { padding: 2.5rem 1.25rem 0.5rem; text-align: center; }
+header .brand, header .brand a {
+  font-size: 1.35rem; font-weight: 700; color: var(--ink);
+  text-decoration: none; letter-spacing: -0.01em;
+}
+header .tagline { color: var(--soft); margin-top: 0.35rem; font-size: 0.98rem; }
+h1, h2, h3 { line-height: 1.25; letter-spacing: -0.01em; }
+.meta { color: var(--soft); font-size: 0.92rem; }
+blockquote {
+  border-left: 4px solid #ddd0f0; background: var(--quote-bg);
+  margin: 1.3rem 0; padding: 0.5rem 1.1rem; color: var(--soft);
+}
+pre {
+  background: var(--code); padding: 0.9rem 1.1rem; border-radius: 8px;
+  overflow-x: auto; line-height: 1.5;
+}
+pre code { background: none; padding: 0; }
+code {
+  background: var(--code); padding: 0.1rem 0.35rem; border-radius: 4px;
+  font-size: 0.92em;
+}
+img { max-width: 100%; }
+hr { border: 0; border-top: 1px solid var(--line); margin: 2rem 0; }
+.issues { list-style: none; padding-left: 0; }
+.issues li { margin: 1.1rem 0; padding-left: 0; }
+.issues .summary { color: var(--soft); font-size: 0.95rem; }
+.year { color: var(--soft); border-bottom: 1px solid var(--line); }
+.background { color: var(--soft); font-size: 0.95rem; }
+.back { margin-top: 2.5rem; }
+.scheduled {
+  border: 1px solid var(--line); border-radius: 8px;
+  padding: 0.9rem 1.2rem; background: #f6fbf7;
+}
+.scheduled .ok { color: var(--ok); font-weight: 600; }
+.steps li { margin: 0.45rem 0; }
+footer {
+  border-top: 1px solid var(--line); text-align: center;
+  color: var(--soft); font-size: 0.9rem; padding: 1.4rem 1rem 2rem; line-height: 1.5;
+}
+footer .fineprint { font-size: 0.82rem; margin-top: 0.4rem; }
+</style>
+</head>
+<body>
+<header>
+<p class="brand"><a href="../index.html">One Topic a Week</a></p>
+<p class="tagline">Plain-English AI, one friendly topic each week.</p>
+</header>
+<main>
+<article>
+<h1>Run a small AI on your own laptop</h1>
+<p class="meta"><time datetime="2026-10-28">October 28, 2026</time> &middot; #local-ai, #beginners</p>
+<p>Small AI models now run comfortably on an ordinary laptop. This week's topic:<br>
+what "local AI" means, why it is worth trying, and how to get one running<br>
+before your coffee cools.</p>
+<h2>The topic in one sentence</h2>
+<p><em>Local AI</em> means the model lives on your machine — you type, it answers, and<br>
+nothing leaves your laptop.</p>
+<h2>Why it matters to you</h2>
+<ul><li><strong>Privacy.</strong> Your words stay on your device. Nothing is sent to a server.</li><li><strong>Cost.</strong> The good open models are free, and your electricity bill will</li></ul>
+<p>  not notice.</p>
+<ul><li><strong>Off-line.</strong> Wi-Fi down? The model does not care. It runs anyway.</li><li><strong>Patience.</strong> No queues, no rate limits, no "you have used your free</li></ul>
+<p>  messages today."</p>
+<h2>Try it yourself (step by step)</h2>
+<p>Pick the smallest path first. On most computers this takes about five<br>
+minutes:</p>
+<ol><li>Install a model runner — <strong>Ollama</strong> and <strong>LM Studio</strong> are the friendlier</li></ol>
+<p>   options for beginners.</p>
+<ol><li>Download one small model. On Ollama, that is one command:</li></ol>
+<pre><code>ollama pull llama3.2:3b
+ollama run llama3.2:3b</code></pre>
+<ol><li>Say hello. Ask it to summarize a paragraph you are reading. Ask it to</li></ol>
+<p>   rewrite your refund email in a firmer tone.</p>
+<blockquote><p>Start small on purpose. A 3B-parameter model answers fast and teaches you<br>
+what local AI feels like. You can always graduate to bigger models later —<br>
+you will know exactly when, because the small one will start to feel slow.</p></blockquote>
+<h2>One friendly note</h2>
+<p>Local models are a little bland and a little clumsy. That is not failure —<br>
+that is what "runs on my laptop, in private" costs. Treat your local model<br>
+as a polite second opinion, not an oracle.</p>
+<p>Next week's scheduled topic is already staged in <code>posts/</code> — see the<br>
+<a href="../next.html">next week page</a> for how scheduling works.</p>
+<p class="back"><a href="../index.html">&larr; All topics</a></p>
+</article>
+</main>
+<footer>
+<p>Written in public by Dylan Asdale &middot; Published by Asdale Dynamics, LLC &middot; <a href="../feed.xml">RSS feed</a> &middot; <a href="../index.html">Archive</a></p>
+<p class="fineprint">Educational content only — not professional, medical, or legal advice. &middot; &copy; 2026 Asdale Dynamics, LLC &middot; MIT License</p>
+</footer>
+</body>
+</html>
